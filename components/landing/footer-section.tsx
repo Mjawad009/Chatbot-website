@@ -134,7 +134,7 @@ export function FooterSection() {
             {/* Brand Column */}
             <div className="col-span-2">
               <a href="/" className="inline-flex items-center gap-2 mb-6">
-                <span className="text-2xl font-display text-white">COMPUTE</span>
+                <span className="text-2xl font-display text-white">THE EVASION</span>
                 <span className="text-xs text-white/40 font-mono">TM</span>
               </a>
 
