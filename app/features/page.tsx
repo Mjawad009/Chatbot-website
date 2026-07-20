@@ -7,11 +7,11 @@ import { FeaturesSection } from "@/components/landing/features-section";
 import { SecuritySection } from "@/components/landing/security-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { Shield, MessageSquare, Users, BarChart3, Search, Zap, Check, Minus } from "lucide-react";
-import { solutions } from "@/lib/solutions-data";
+import { solutions } from "@/lib/industries-data";
 
 const comparisonRows = [
   { feature: "AI chatbots", free: "1", business: "Up to 25", enterprise: "Unlimited" },
-  { feature: "Conversations / month", free: "[Message Limit]", business: "[Message Limit]", enterprise: "Unlimited" },
+  { feature: "Conversations / month", free: "500", business: "5,000", enterprise: "Unlimited" },
   { feature: "Conversation history & analytics", free: "Basic", business: "Full", enterprise: "Full" },
   { feature: "Custom chatbot personality", free: false, business: true, enterprise: true },
   { feature: "Team workspaces", free: false, business: true, enterprise: true },
@@ -114,7 +114,7 @@ export default function FeaturesPage() {
             {solutions.map((solution) => (
               <Link
                 key={solution.slug}
-                href={`/solutions/${solution.slug}`}
+                href={`/industries/${solution.slug}`}
                 className="group bg-background p-8 lg:p-10 transition-colors hover:bg-foreground/[0.03]"
               >
                 <solution.icon className="w-6 h-6 mb-6 text-[#eca8d6]" />

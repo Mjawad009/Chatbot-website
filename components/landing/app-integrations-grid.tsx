@@ -34,7 +34,7 @@ export function AppIntegrationsGrid() {
           <p className="text-muted-foreground mb-2">Don&apos;t see it in the list?</p>
           <p className="text-sm text-muted-foreground">
             If it has an API, we can very likely still connect it —{" "}
-            <Link href="/contact" className="underline underline-offset-4 hover:text-foreground">
+            <Link href="/book-demo" className="underline underline-offset-4 hover:text-foreground">
               just ask
             </Link>
             .
@@ -56,7 +56,7 @@ export function AppIntegrationsGrid() {
 
           {/* Closing tile for the long tail — the honest, defensible number */}
           <Link
-            href="/contact"
+            href="/book-demo"
             className="group flex flex-col items-center justify-center gap-3 aspect-square rounded-xl p-4 text-center bg-foreground/[0.04] hover:bg-foreground/[0.07] transition-colors"
           >
             <div className="w-10 h-10 rounded-full bg-[#eca8d6]/15 flex items-center justify-center">

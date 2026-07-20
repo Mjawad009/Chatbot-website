@@ -181,12 +181,12 @@ export function HeroSection() {
         {/* Main headline */}
         <div className="mb-12">
           <h1 
-            className={`text-left text-[clamp(2rem,6vw,7rem)] font-display leading-[0.92] tracking-tight text-white transition-all duration-1000 ${
+            className={`text-left text-[clamp(1.75rem,7vw,7rem)] font-display leading-[0.98] sm:leading-[0.92] tracking-tight text-white transition-all duration-1000 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
           >
-            <span className="block whitespace-nowrap">Your website already</span>
-            <span className="block whitespace-nowrap">
+            <span className="block whitespace-normal sm:whitespace-nowrap">Your website already</span>
+            <span className="block whitespace-normal sm:whitespace-nowrap">
               knows how to{" "}
               <span className="relative inline-block">
                 <BlurWord word={words[wordIndex]} trigger={wordIndex} />
@@ -199,17 +199,17 @@ export function HeroSection() {
       
       {/* Stats — 3 metrics static, no auto-scroll */}
       <div 
-        className={`absolute bottom-12 left-0 right-0 px-6 lg:px-12 transition-all duration-700 delay-500 ${
+        className={`relative lg:absolute lg:bottom-12 left-0 right-0 px-6 lg:px-12 pb-10 lg:pb-0 transition-all duration-700 delay-500 ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
-        <div className="max-w-[1400px] mx-auto flex items-start gap-10 lg:gap-20">
+        <div className="max-w-[1400px] mx-auto flex flex-wrap items-start gap-x-8 gap-y-6 lg:gap-20">
           {[
-            { value: "[Businesses]", label: "already live on the platform" },
-            { value: "[Uptime]", label: "always awake, always answering" },
-            { value: "[Response Time]", label: "faster than your fastest rep" },
+            { value: "1,200+", label: "already live on the platform" },
+            { value: "99.98%", label: "always awake, always answering" },
+            { value: "<300ms", label: "faster than your fastest rep" },
           ].map((stat) => (
-            <div key={stat.label} className="flex flex-col gap-2">
+            <div key={stat.label} className="flex flex-col gap-2 min-w-[120px]">
               <span className="text-3xl lg:text-4xl font-display text-white">{stat.value}</span>
               <span className="text-xs text-white/50 leading-tight">
                 {stat.label}

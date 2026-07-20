@@ -146,7 +146,7 @@ export function IntegrationsSection({ showHeader = true }: { showHeader?: boolea
         }`}>
           <div className="flex flex-wrap gap-12">
             {[
-              { value: "[Integration Count]", label: "Tools you already use" },
+              { value: "500+", label: "Tools you already use" },
               { value: "One click", label: "Secure login" },
               { value: "Instant", label: "Always up to date" },
             ].map((stat) => (

@@ -57,7 +57,7 @@ export function CtaSection() {
                 </h2>
 
                 <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-xl">
-                  Join businesses already using [Product Name] to answer questions,
+                  Join businesses already using The Evasion Chat to answer questions,
                   capture leads, and save their team hours every week.
                 </p>
 
@@ -79,7 +79,7 @@ export function CtaSection() {
                 </div>
 
                 <p className="text-sm text-muted-foreground mt-8 font-mono">
-                  [Message Limit] free conversations. No credit card. Cancel anytime.
+                  500 free conversations. No credit card. Cancel anytime.
                 </p>
               </div>
 

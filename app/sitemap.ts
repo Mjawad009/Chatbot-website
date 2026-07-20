@@ -1,11 +1,11 @@
 import type { MetadataRoute } from "next";
-import { solutions } from "@/lib/solutions-data";
+import { solutions } from "@/lib/industries-data";
 import { integrationDetails } from "@/lib/integrations-data";
 import { caseStudies } from "@/lib/case-studies-data";
 import { getAllPosts } from "@/lib/blog-store";
 
 // TODO: replace with your real production domain once deployed
-const BASE_URL = "https://example.com";
+const BASE_URL = "https://evasionchat.pinktree.co";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
@@ -13,11 +13,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/features",
     "/integrations",
     "/pricing",
-    "/solutions",
+    "/industries",
     "/case-studies",
     "/blog",
-    "/contact",
+    "/book-demo",
+    "/sign-in",
+    "/docs",
+    "/ai-automations",
     "/security",
+    "/privacy",
+    "/terms",
     "/changelog",
     "/roadmap",
   ].map((route) => ({
@@ -26,7 +31,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const solutionRoutes = solutions.map((s) => ({
-    url: `${BASE_URL}/solutions/${s.slug}`,
+    url: `${BASE_URL}/industries/${s.slug}`,
     lastModified: new Date(),
   }));
 

@@ -6,27 +6,27 @@ import { useEffect, useRef } from "react";
 const footerLinks = {
   Product: [
     { name: "Features", href: "/features" },
-    { name: "How it works", href: "/#how-it-works" },
+    { name: "AI Automations", href: "/ai-automations" },
     { name: "Pricing", href: "/pricing" },
     { name: "Integrations", href: "/integrations" },
-    { name: "Solutions", href: "/solutions" },
+    { name: "Industries", href: "/industries" },
     { name: "Case Studies", href: "/case-studies" },
   ],
   Developers: [
-    { name: "Documentation", href: "/#developers" },
-    { name: "API", href: "#" },
+    { name: "Documentation", href: "/docs" },
+    { name: "Security", href: "/security" },
     { name: "Changelog", href: "/changelog" },
     { name: "Roadmap", href: "/roadmap" },
   ],
   Company: [
-    { name: "About", href: "#" },
+    { name: "Pink Tree (Parent Co.)", href: "https://pinktree.co" },
     { name: "Blog", href: "/blog" },
-    { name: "Careers", href: "#", badge: "Hiring" },
-    { name: "Contact", href: "/contact" },
+    { name: "Book a Demo", href: "/book-demo" },
+    { name: "Sign In", href: "/sign-in" },
   ],
   Legal: [
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
+    { name: "Privacy", href: "/privacy" },
+    { name: "Terms", href: "/terms" },
     { name: "Security", href: "/security" },
   ],
 };
@@ -130,11 +130,11 @@ export function FooterSection() {
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Main Footer */}
         <div className="py-16 lg:py-20">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-12 lg:gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-8 gap-y-12 lg:gap-8">
             {/* Brand Column */}
             <div className="col-span-2">
               <a href="/" className="inline-flex items-center gap-2 mb-6">
-                <span className="text-2xl font-display text-white">THE EVASION</span>
+                <span className="text-2xl font-display text-white">EVASION CHAT</span>
                 <span className="text-xs text-white/40 font-mono">TM</span>
               </a>
 
@@ -186,7 +186,7 @@ export function FooterSection() {
         {/* Bottom Bar */}
         <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
-            &copy; 2026 [Product Name]. All rights reserved.
+            &copy; 2026 The Evasion Chat. All rights reserved.
           </p>
 
           <div className="flex items-center gap-4 text-sm text-white/30">

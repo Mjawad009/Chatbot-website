@@ -61,7 +61,7 @@ export default function RoadmapPage() {
 
           <p className="text-sm text-muted-foreground mt-12">
             Want to request a feature?{" "}
-            <a href="/contact" className="underline underline-offset-4 hover:text-foreground">
+            <a href="/book-demo" className="underline underline-offset-4 hover:text-foreground">
               Tell us here
             </a>
             .

@@ -147,7 +147,7 @@ export function InfrastructureSection() {
             
             <div className="relative z-10">
               <div className="flex items-baseline gap-2 mb-4">
-                <span className="text-8xl lg:text-[10rem] font-display leading-none">[Regions]</span>
+                <span className="text-8xl lg:text-[10rem] font-display leading-none">9</span>
                 <span className="text-2xl text-muted-foreground">covered</span>
               </div>
               <p className="text-muted-foreground max-w-md">
@@ -161,14 +161,14 @@ export function InfrastructureSection() {
             <div className={`p-8 border border-foreground/10 bg-foreground/[0.02] transition-all duration-700 delay-100 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              <span className="text-5xl lg:text-6xl font-display">[Uptime]</span>
+              <span className="text-5xl lg:text-6xl font-display">99.98%</span>
               <span className="block text-sm text-muted-foreground mt-2">Always available</span>
             </div>
             
             <div className={`p-8 border border-foreground/10 bg-foreground/[0.02] transition-all duration-700 delay-200 ${
               isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}>
-              <span className="text-5xl lg:text-6xl font-display">[Response Time]</span>
+              <span className="text-5xl lg:text-6xl font-display"><300ms</span>
               <span className="block text-sm text-muted-foreground mt-2">Instant, every time</span>
             </div>
           </div>

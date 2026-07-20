@@ -22,8 +22,8 @@ const jetbrainsMono = JetBrains_Mono({
 
 // TODO: replace with your real production domain once deployed — this
 // affects how OpenGraph images and canonical URLs resolve.
-const SITE_URL = "https://example.com";
-const SITE_NAME = "[Product Name]";
+const SITE_URL = "https://evasionchat.pinktree.co";
+const SITE_NAME = "The Evasion Chat";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

@@ -3,36 +3,40 @@
 import { useEffect, useState, useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
-// PLACEHOLDER TESTIMONIALS — replace with real, permissioned customer quotes,
-// names, and companies before publishing. Shape kept intentionally specific
-// and outcome-first as a guide for what to collect.
+// ILLUSTRATIVE TESTIMONIALS — I don't have access to your real customers, so
+// these are realistic, well-formed placeholders (plausible names, companies,
+// and round numbers) rather than bracketed fields. They are NOT real quotes
+// from real people — replace every one with a genuine, permissioned customer
+// quote before this goes live. Publishing fabricated testimonials as if real
+// is misleading to visitors and, in several jurisdictions (e.g. FTC rules in
+// the US), legally risky.
 const testimonials = [
   {
     quote: "Our chatbot now answers most of our repeat customer questions before a human ever sees them.",
-    author: "[Customer Name]",
+    author: "Dana Whitfield",
     role: "Head of Support",
-    company: "[Company Name]",
-    metric: { value: "[Support Deflection Rate]", label: "Questions handled by AI" },
+    company: "Northfield Outfitters",
+    metric: { value: "70%", label: "Questions handled by AI" },
   },
   {
     quote: "Our chatbot answers customer questions instantly, even outside business hours.",
-    author: "[Customer Name]",
+    author: "Marcus Webb",
     role: "Operations Manager",
-    company: "[Company Name]",
+    company: "Solano Home Goods",
     metric: { value: "24/7", label: "Always available" },
   },
   {
     quote: "We run a separate chatbot for each of our clients — all from one dashboard.",
-    author: "[Customer Name]",
+    author: "Priya Nandakumar",
     role: "Founder",
-    company: "[Agency Name]",
-    metric: { value: "[Client Count]", label: "Businesses managed" },
+    company: "Loft Digital Agency",
+    metric: { value: "32", label: "Client workspaces managed" },
   },
   {
     quote: "As a healthcare provider, data privacy was non-negotiable. This gave us full confidence.",
-    author: "[Customer Name]",
+    author: "Dr. Alan Ferris",
     role: "Compliance Lead",
-    company: "[Company Name]",
+    company: "Ferris Family Clinic",
     metric: { value: "0", label: "Data incidents" },
   },
 ];

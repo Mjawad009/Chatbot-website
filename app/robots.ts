@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
       disallow: ["/admin", "/api"],
     },
     // TODO: replace with your real production domain once deployed
-    sitemap: "https://example.com/sitemap.xml",
+    sitemap: "https://evasionchat.pinktree.co/sitemap.xml",
   };
 }

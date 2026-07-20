@@ -12,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { ArrowRight, Check } from "lucide-react";
 
-export const contactFaqs = [
+export const bookDemoFaqs = [
   {
     question: "Do I need any technical knowledge to get started?",
     answer: "No — most businesses get a chatbot trained and live without writing any code. Point it at your website or upload a few documents and it's ready.",
@@ -25,9 +25,21 @@ export const contactFaqs = [
     question: "Is there a contract or can I cancel anytime?",
     answer: "No long-term contract required — you can cancel anytime, and you can export your data if you do.",
   },
+  {
+    question: "What happens on the demo call?",
+    answer: "We'll train a sample chatbot on your actual website or a document you provide, show you how it answers, and walk through pricing and setup for your specific use case. No slide deck, no generic pitch.",
+  },
+  {
+    question: "Can I try it without talking to sales first?",
+    answer: "Yes — the Free plan lets you train and deploy a chatbot on your own without a call. Book a demo if you'd rather have someone walk you through it or you're evaluating Business or Enterprise.",
+  },
+  {
+    question: "Will my data be used to train other customers' chatbots?",
+    answer: "No — your content trains only your chatbot. Workspaces are isolated from each other; see our Security page for details.",
+  },
 ];
 
-export function ContactClient() {
+export function BookDemoClient() {
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -139,7 +151,7 @@ export function ContactClient() {
 
             {/* Side panel */}
             <div className="lg:col-span-5">
-              <div className="sticky top-32 space-y-10">
+              <div className="lg:sticky lg:top-32 space-y-10">
                 <div className="flex justify-center lg:justify-start">
                   <ChatWidgetMockup />
                 </div>
@@ -160,7 +172,7 @@ export function ContactClient() {
                   <div className="flex items-start gap-3">
                     <Check className="w-4 h-4 text-[#eca8d6] mt-1 shrink-0" />
                     <p className="text-sm text-muted-foreground">
-                      Prefer to explore on your own first? Start a free trial instead — [Message Limit] conversations included.
+                      Prefer to explore on your own first? Start a free trial instead — 500 conversations included.
                     </p>
                   </div>
                 </div>
@@ -175,7 +187,7 @@ export function ContactClient() {
           <span className="inline-flex items-center gap-2 text-sm font-mono text-muted-foreground mb-6">
             Before you reach out
           </span>
-          <FaqAccordion items={contactFaqs} />
+          <FaqAccordion items={bookDemoFaqs} />
         </div>
       </section>
 

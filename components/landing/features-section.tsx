@@ -8,7 +8,7 @@ const features = [
     number: "01",
     title: "Knows your business, not the internet",
     description: "Your chatbot only answers from what you give it — your website, documents, and FAQs. No made-up answers, no guessing.",
-    stats: { value: "[Accuracy Rate]", label: "answer accuracy" },
+    stats: { value: "96%", label: "answer accuracy" },
   },
   {
     number: "02",

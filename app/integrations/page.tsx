@@ -63,7 +63,7 @@ export default function IntegrationsPage() {
             <p className="text-muted-foreground">Tell us what you&apos;re trying to connect and we&apos;ll see if it fits the roadmap.</p>
           </div>
           <Link
-            href="/contact"
+            href="/book-demo"
             className="inline-flex items-center gap-2 text-sm font-medium underline underline-offset-4 hover:text-muted-foreground transition-colors shrink-0"
           >
             Request an integration

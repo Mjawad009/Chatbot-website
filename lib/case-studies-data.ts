@@ -11,14 +11,15 @@ export interface CaseStudy {
   quote: { text: string; role: string };
 }
 
-// PLACEHOLDER CASE STUDIES — replace with real, permissioned customer stories,
-// names, companies, and metrics before publishing.
+// ILLUSTRATIVE CASE STUDIES — company names and result numbers are plausible
+// placeholders, not real customers. Replace with real, permissioned stories
+// before publishing. See vague-metrics-master-list.md for the full audit.
 export const caseStudies: CaseStudy[] = [
   {
     slug: "company-a-ecommerce",
-    company: "[Company Name]",
+    company: "Northfield Outfitters",
     industry: "E-commerce",
-    result: "[Support Deflection Rate]",
+    result: "68%",
     resultLabel: "of questions answered by AI",
     summary:
       "A growing online retailer trained its chatbot on its product catalog and shipping policy, cutting repeat support tickets and freeing up its team for complex cases.",
@@ -35,7 +36,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "company-b-healthcare",
-    company: "[Company Name]",
+    company: "Ferris Family Clinic",
     industry: "Healthcare",
     result: "0",
     resultLabel: "data incidents since launch",
@@ -54,9 +55,9 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "agency-c-multi-client",
-    company: "[Agency Name]",
+    company: "Loft Digital Agency",
     industry: "Agency",
-    result: "[Client Count]",
+    result: "32",
     resultLabel: "client chatbots managed from one dashboard",
     summary:
       "A digital agency now offers AI chatbots as a service to its clients, deploying and managing every client's assistant from a single, centralized dashboard.",

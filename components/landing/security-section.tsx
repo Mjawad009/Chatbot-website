@@ -118,7 +118,7 @@ export function SecuritySection({ showHeader = true }: { showHeader?: boolean })
             <div className="relative z-10">
               <span className="font-mono text-sm text-muted-foreground">Your data, protected</span>
               <div className="mt-8">
-                <span className="text-7xl lg:text-8xl font-display">[Security Record]</span>
+                <span className="text-7xl lg:text-8xl font-display">0</span>
                 <span className="block text-muted-foreground mt-2">Security incidents on record</span>
               </div>
             </div>

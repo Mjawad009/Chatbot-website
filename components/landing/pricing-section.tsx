@@ -10,7 +10,7 @@ const plans = [
     price: { monthly: 0, annual: 0 },
     features: [
       "1 AI chatbot",
-      "[Message Limit] conversations/month",
+      "500 conversations/month",
       "Community support",
       "Basic conversation history",
       "Standard integrations",
@@ -24,7 +24,7 @@ const plans = [
     price: { monthly: 79, annual: 65 },
     features: [
       "Up to 25 AI chatbots",
-      "[Message Limit] conversations/month",
+      "5,000 conversations/month",
       "Priority support",
       "Full conversation history & analytics",
       "Advanced integrations",

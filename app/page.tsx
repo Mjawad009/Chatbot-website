@@ -21,6 +21,9 @@ const InfrastructureSection = dynamic(() =>
 const MetricsSection = dynamic(() =>
   import("@/components/landing/metrics-section").then((m) => m.MetricsSection)
 );
+const DashboardPreviewSection = dynamic(() =>
+  import("@/components/landing/dashboard-preview-section").then((m) => m.DashboardPreviewSection)
+);
 const IntegrationsSection = dynamic(() =>
   import("@/components/landing/integrations-section").then((m) => m.IntegrationsSection)
 );
@@ -51,6 +54,7 @@ export default function Home() {
       <SocialProofSection />
       <FeaturesSection />
       <HowItWorksSection />
+      <DashboardPreviewSection />
       <InfrastructureSection />
       <MetricsSection />
       <IntegrationsSection />

@@ -5,11 +5,11 @@ import { Navigation } from "@/components/landing/navigation";
 import { FooterSection } from "@/components/landing/footer-section";
 import { PageHero } from "@/components/landing/page-hero";
 import { CtaSection } from "@/components/landing/cta-section";
-import { solutions } from "@/lib/solutions-data";
+import { solutions } from "@/lib/industries-data";
 
 export const metadata: Metadata = {
-  title: "Solutions by Industry",
-  description: "See how e-commerce, healthcare, education, agencies, SaaS companies, and professional services use an AI chatbot trained on their own content.",
+  title: "Industries",
+  description: "See how visa consultants and research companies use The Evasion Chat, trained on their own content, to answer instantly and stay compliant.",
 };
 
 export default function SolutionsPage() {
@@ -18,7 +18,7 @@ export default function SolutionsPage() {
       <Navigation />
 
       <PageHero
-        eyebrow="Solutions"
+        eyebrow="Industries"
         title={
           <>
             Built for your
@@ -26,7 +26,7 @@ export default function SolutionsPage() {
             <span className="text-muted-foreground">kind of business.</span>
           </>
         }
-        subheading="Every industry asks different questions. See how businesses like yours put their AI chatbot to work."
+        subheading="We're starting deep, not wide. See exactly how The Evasion Chat is configured for visa consultants and research companies."
       />
 
       <section className="relative py-24 lg:py-32">
@@ -35,7 +35,7 @@ export default function SolutionsPage() {
             {solutions.map((solution) => (
               <Link
                 key={solution.slug}
-                href={`/solutions/${solution.slug}`}
+                href={`/industries/${solution.slug}`}
                 className="group relative bg-background p-8 lg:p-10 transition-colors hover:bg-foreground/[0.03]"
               >
                 <solution.icon className="w-7 h-7 mb-8 text-[#eca8d6]" />

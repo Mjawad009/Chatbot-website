@@ -6,11 +6,11 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "What It Does",  href: "/features"      },
-  { name: "Solutions",     href: "/solutions"     },
-  { name: "Integrations",  href: "/integrations"  },
-  { name: "Pricing",       href: "/pricing"       },
-  { name: "Blog",          href: "/blog"          },
+  { name: "Features",       href: "/features"        },
+  { name: "Integrations",   href: "/integrations"    },
+  { name: "AI Automations", href: "/ai-automations"  },
+  { name: "Industries",     href: "/industries"      },
+  { name: "Pricing",        href: "/pricing"         },
 ];
 
 export function Navigation() {
@@ -47,7 +47,7 @@ export function Navigation() {
         >
           {/* Logo */}
           <a href="/" className="flex items-center gap-2 group">
-            <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-xl text-foreground" : "text-2xl text-white"}`}>THE EVASION</span>
+            <span className={`font-display tracking-tight transition-all duration-500 ${isScrolled ? "text-xl text-foreground" : "text-2xl text-white"}`}>EVASION CHAT</span>
             <span className={`font-mono transition-all duration-500 ${isScrolled ? "text-[10px] mt-0.5 text-muted-foreground" : "text-xs mt-1 text-white/60"}`}>TM</span>
           </a>
 
@@ -67,15 +67,15 @@ export function Navigation() {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <a href="#" className={`transition-all duration-500 ${isScrolled ? "text-xs text-foreground/70 hover:text-foreground" : "text-sm text-white/70 hover:text-white"}`}>
-              Log in
+            <a href="/sign-in" className={`transition-all duration-500 ${isScrolled ? "text-xs text-foreground/70 hover:text-foreground" : "text-sm text-white/70 hover:text-white"}`}>
+              Sign In
             </a>
             <Button
               asChild
               size="sm"
               className={`rounded-full transition-all duration-500 ${isScrolled ? "bg-foreground hover:bg-foreground/90 text-background px-4 h-8 text-xs" : "bg-white hover:bg-white/90 text-black px-6"}`}
             >
-              <Link href="/pricing">Try it free</Link>
+              <Link href="/book-demo">Book demo</Link>
             </Button>
           </div>
 
@@ -104,7 +104,16 @@ export function Navigation() {
         }`}
         style={{ top: 0 }}
       >
-        <div className="flex flex-col h-full px-8 pt-28 pb-8">
+        <div className="relative flex flex-col h-full px-8 pt-28 pb-8">
+          {/* Explicit close button, in addition to the header toggle */}
+          <button
+            onClick={() => setIsMobileMenuOpen(false)}
+            aria-label="Close menu"
+            className="absolute top-6 right-6 p-2 text-foreground hover:text-muted-foreground transition-colors"
+          >
+            <X className="w-7 h-7" />
+          </button>
+
           {/* Navigation Links */}
           <div className="flex-1 flex flex-col justify-center gap-8">
             {navLinks.map((link, i) => (
@@ -133,18 +142,19 @@ export function Navigation() {
           style={{ transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
           >
             <Button 
+              asChild
               variant="outline" 
               className="flex-1 rounded-full h-14 text-base"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Log in
+              <Link href="/sign-in">Sign In</Link>
             </Button>
             <Button 
               asChild
               className="flex-1 bg-foreground text-background rounded-full h-14 text-base"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              <Link href="/pricing">Try it free</Link>
+              <Link href="/book-demo">Book demo</Link>
             </Button>
           </div>
         </div>

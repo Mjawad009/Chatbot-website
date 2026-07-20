@@ -1,20 +1,20 @@
 import type { Metadata } from "next";
-import { ContactClient, contactFaqs } from "./contact-client";
+import { BookDemoClient, bookDemoFaqs } from "./book-demo-client";
 import { faqPageJsonLd } from "@/lib/seo";
 
 export const metadata: Metadata = {
-  title: "Contact & Book a Demo",
+  title: "Book a Demo",
   description: "Tell us about your business and we'll show you a chatbot trained on your own website — no pressure, no sales script.",
 };
 
-export default function ContactPage() {
+export default function BookDemoPage() {
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageJsonLd(contactFaqs)) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqPageJsonLd(bookDemoFaqs)) }}
       />
-      <ContactClient />
+      <BookDemoClient />
     </>
   );
 }

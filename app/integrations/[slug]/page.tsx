@@ -16,7 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const integration = getIntegrationBySlug(slug);
   if (!integration) return {};
   return {
-    title: `${integration.name} — [Product Name]`,
+    title: `${integration.name} — The Evasion Chat`,
     description: integration.description,
   };
 }

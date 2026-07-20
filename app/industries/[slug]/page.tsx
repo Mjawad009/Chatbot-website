@@ -6,7 +6,7 @@ import { CtaSection } from "@/components/landing/cta-section";
 import { ChatWidgetMockup } from "@/components/landing/chat-widget-mockup";
 import { FaqAccordion } from "@/components/landing/faq-accordion";
 import { faqPageJsonLd } from "@/lib/seo";
-import { solutions, getSolutionBySlug } from "@/lib/solutions-data";
+import { solutions, getSolutionBySlug } from "@/lib/industries-data";
 
 export function generateStaticParams() {
   return solutions.map((s) => ({ slug: s.slug }));
@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const solution = getSolutionBySlug(slug);
   if (!solution) return {};
   return {
-    title: `AI Chatbot for ${solution.industry} — [Product Name]`,
+    title: `AI Chatbot for ${solution.industry} — The Evasion Chat`,
     description: solution.subheading,
   };
 }
@@ -66,7 +66,7 @@ export default async function SolutionPage({ params }: { params: Promise<{ slug:
             </div>
 
             <div className="lg:col-span-5">
-              <div className="sticky top-32 space-y-10">
+              <div className="lg:sticky lg:top-32 space-y-10">
                 <div className="flex justify-center lg:justify-start">
                   <ChatWidgetMockup />
                 </div>
